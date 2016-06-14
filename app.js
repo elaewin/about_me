@@ -10,3 +10,11 @@ if (answer1 === 'yes' || answer1 === 'y') {
 } else {
   alert('Wrong! Erica does have two cats.');
 }
+
+var answer2 = prompt('Is Erica from Seattle?').toLowerCase();
+
+if (answer2 === 'yes' || answer2 === 'y') {
+  alert('Correct! Erica was born in Seattle. (Although she grew up in Olympia.)');
+} else {
+  alert('Wrong! Erica is, in fact, from Seattle.');
+}
