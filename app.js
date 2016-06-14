@@ -1,8 +1,10 @@
 'use strict';
 
+// Collect user's name
 var userName = prompt('Hello! What is your name?');
 alert('Welcome ' + userName + '! Glad you\'re here!');
 
+// Five question yes/no guessing game
 var answer1 = prompt('Does Erica have 2 cats? (yes or no)').toLowerCase();
 
 if (answer1 === 'yes' || answer1 === 'y') {
