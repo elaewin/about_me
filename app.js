@@ -6,7 +6,7 @@ alert('Welcome ' + userName + '! Glad you\'re here!');
 var answer1 = prompt('Does Erica have 2 cats? (yes or no)').toLowerCase();
 
 if (answer1 === 'yes' || answer1 === 'y') {
-  alert('You\'re right! Erica has two cats, named Aonghus and Murdoch. She calls them her \'Scottish Buddy-Cop Show\'.');
+  alert('You\'re right! Erica has two cats, named Aonghus and Murdoch.\n\nShe calls them her \'Scottish Buddy-Cop Show\'.');
 } else {
   alert('Wrong! Erica does have two cats.');
 }
@@ -22,7 +22,15 @@ if (answer2 === 'yes' || answer2 === 'y') {
 var answer3 = prompt('Does Erica hate cheese?');
 
 if (answer3 === 'no' || answer3 === 'n') {
-  alert('That\'s right! Erica does NOT hate cheese. What kind of person hates cheese!?');
+  alert('That\'s right! Erica does NOT hate cheese.\nWhat kind of person hates cheese!?');
 } else {
   alert('Actually, Erica loves cheese, sorry.');
+}
+
+var answer4 = prompt('Has Erica lived in San Francisco?');
+
+if (answer4 === 'no' || answer4 === 'n') {
+  alert('Right! Erica has never lived in San Francisco, although she has lived in Boston, MA, Chapel Hill, NC, and Aberdeen, Scotland.');
+} else {
+  alert('Wrong! Erica likes San Francisco, but she\'s never lived there. Places she HAS lived: Boston, MA, Chapel Hill, NC, and Aberdeen, Scotland.');
 }
