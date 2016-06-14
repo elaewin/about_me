@@ -14,7 +14,15 @@ if (answer1 === 'yes' || answer1 === 'y') {
 var answer2 = prompt('Is Erica from Seattle?').toLowerCase();
 
 if (answer2 === 'yes' || answer2 === 'y') {
-  alert('Correct! Erica was born in Seattle. (Although she grew up in Olympia.)');
+  alert('Correct! Erica was born in Seattle, (although she grew up in Olympia,) and moved back in the mid-90\'s.');
 } else {
   alert('Wrong! Erica is, in fact, from Seattle.');
+}
+
+var answer3 = prompt('Does Erica hate cheese?');
+
+if (answer3 === 'no' || answer3 === 'n') {
+  alert('That\'s right! Erica does NOT hate cheese. What kind of person hates cheese!?');
+} else {
+  alert('Actually, Erica loves cheese, sorry.');
 }
