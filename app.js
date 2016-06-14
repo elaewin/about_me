@@ -19,7 +19,7 @@ if (answer2 === 'yes' || answer2 === 'y') {
   alert('Wrong! Erica is, in fact, from Seattle.');
 }
 
-var answer3 = prompt('Does Erica hate cheese?');
+var answer3 = prompt('Does Erica hate cheese?').toLowerCase();
 
 if (answer3 === 'no' || answer3 === 'n') {
   alert('That\'s right! Erica does NOT hate cheese.\nWhat kind of person hates cheese!?');
@@ -27,10 +27,18 @@ if (answer3 === 'no' || answer3 === 'n') {
   alert('Actually, Erica loves cheese, sorry.');
 }
 
-var answer4 = prompt('Has Erica lived in San Francisco?');
+var answer4 = prompt('Has Erica lived in San Francisco?').toLowerCase();
 
 if (answer4 === 'no' || answer4 === 'n') {
   alert('Right! Erica has never lived in San Francisco, although she has lived in Boston, MA, Chapel Hill, NC, and Aberdeen, Scotland.');
 } else {
   alert('Wrong! Erica likes San Francisco, but she\'s never lived there. Places she HAS lived: Boston, MA, Chapel Hill, NC, and Aberdeen, Scotland.');
+}
+
+var answer5 = prompt('Did Erica go to the University of Washington?').toLowerCase();
+
+if (answer5 === 'yes' || answer5 === 'y') {
+  alert('She did! Erica is a third-generation Husky grad.');
+} else {
+  alert('Wrong! Erica is actually a 3rd Generation UW grad!');
 }
