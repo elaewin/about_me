@@ -1,15 +1,26 @@
 body {
   background-color: #fff9f3;
+  font-family: "Palatino", serif;
   margin: 0;
 }
 
 header {
-  background-color: #000;
+  background-color: #333;
   color: #fff9f3;
   margin: 0px;
   padding: 5px;
   text-align: center;
   width: 100%;
+}
+
+section {
+  padding: 10px;
+}
+
+section .reference {
+  text-align: right;
+  font-style: italic;
+  font-size: .8em;
 }
 
 #goals {
@@ -20,11 +31,43 @@ header {
   color: #252338;
   font-family: "Arial", sans-serif;
   margin: 15px 10px 10px 15px;
-  padding: 10px;
 }
 
 #goals h1 {
   color: #d16321;
+  font-family: "Arial Black", sans-serif;
   font-variant: small-caps;
-  margin-top: 0px;
+  margin: 0px;
+}
+
+#goals a {
+  text-decoration: none;
+}
+#goals a:link {color: #295e9e;}
+#goals a:active {color: #669900;}
+#goals a:visited {color: #669900;}
+
+#about_me {
+  background-color: #e6ffff;
+  color: #331a00;
+  font-family: "Geneva", sans-serif;
+  border-bottom: 6px double #ffaa90;
+  border-top: 6px double #ffaa90;
+  padding: 10px 20px;
+}
+
+#about_me a:link {color: #616799;}
+#about_me a:visited {color: #616799;}
+#about_me a:hover {color: #91daff;}
+
+#education {
+  padding: 10px;
+}
+
+#education p {
+  padding-left: 20px;
+}
+
+#experience {
+  padding: 10px;
 }
