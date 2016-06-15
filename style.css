@@ -11,3 +11,19 @@ header {
   text-align: center;
   width: 100%;
 }
+
+#about_me {
+  background-color: #ecac70;
+  border: 1px solid #295e9e;
+  border-radius: 10px;
+  box-shadow: -5px -5px 5px #252338;
+  color: #252338;
+  font-family: "Arial", sans-serif;
+  margin: 15px 10px 10px 15px;
+  padding: 10px;
+}
+
+#about_me h1 {
+  color: #d16321;
+  font-variant: small-caps;
+}
