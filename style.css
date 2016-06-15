@@ -61,6 +61,7 @@ section .reference {
 #about_me a:hover {color: #91daff;}
 
 #education {
+  font-family: "Goudy Old Style", serif;
   padding: 10px;
 }
 
@@ -69,5 +70,10 @@ section .reference {
 }
 
 #experience {
+  font-family: "Courier New", serif;
   padding: 10px;
+}
+
+#experience h1 {
+  font-family: "Impact", sans-serif;
 }
