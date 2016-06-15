@@ -17,12 +17,6 @@ section {
   padding: 10px;
 }
 
-section .reference {
-  text-align: right;
-  font-style: italic;
-  font-size: .8em;
-}
-
 #goals {
   background-color: #ecac70;
   border: 1px solid #295e9e;
