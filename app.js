@@ -1,8 +1,8 @@
 'use strict';
 
-// // Collect user's name
-// var userName = prompt('Hello! What is your name?');
-// alert('Welcome ' + userName + '! Glad you\'re here!');
+// Collect user's name
+var userName = prompt('Hello! What is your name?');
+alert('Welcome ' + userName + '! Glad you\'re here!');
 
 // Set up a variable to count the number of right answers.
 var correctAnswers = 0;
@@ -102,7 +102,6 @@ while (tries < 7 && guessedRight === false) {
   var answer7 = prompt('Guess one of Erica\'s favorite foods! (You have ' + (7 - tries) + ' guesses left.)').toLowerCase();
   for (var i = 0; i < answersArray.length; i++) {
     if (answer7 === answersArray[i]) {
-      tries = 7;
       guessedRight = true;
       correctAnswers += 1;
       alert('You guessed one!\n\nErica\'s favorite foods are:\nsushi\nice cream\nlemon bars\nmac and cheese\npomegranates\ncheese\nbacon');
