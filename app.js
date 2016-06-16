@@ -68,8 +68,8 @@ if (answer5 === 'yes' || answer5 === 'y') {
 }
 
 // Asks the user to guess a number between 1 and 100
-var myNumber = 46; // Set the number to guess.
-var tries = 0; // Variable to keep track of the number of tries.
+var myNumber = 46; // Sets the number to guess.
+var tries = 0; // Keeps track of the number of attempted answers.
 
 while (tries < 4) {
   var answer6 = parseInt(prompt('Guess a number between 1 and 100.\n(You have ' + (4 - tries) + ' tries remaining.)')); // How many tries they have left.
@@ -83,10 +83,13 @@ while (tries < 4) {
   } else if (answer6 > myNumber) {
     alert('Too high!');
     tries += 1;
+  } else {
+    alert('Try again--enter a number between 1 and 100 this time!');
+    tries += 1;
   }
 }
 
-// Asks the user to guess answers stored in an array.
+// Asks the user to guess an answer from values stored in an array.
 var answersArray = ['sushi',
                     'ice cream',
                     'lemon bars',
@@ -94,8 +97,8 @@ var answersArray = ['sushi',
                     'pomegranates',
                     'cheese'
                   ];
-var tries = 0;
-var guessedRight = false;
+var tries = 0; // Keeps track of the number of attempted answers.
+var guessedRight = false; // Tracks whether or not there is a correct answer.
 
 while (tries < 6 && guessedRight === false) {
   var answer7 = prompt('Guess one of Erica\'s favorite foods! (You have ' + (6 - tries) + ' guesses left.)').toLowerCase();
