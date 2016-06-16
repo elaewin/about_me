@@ -1,14 +1,16 @@
 body {
-  background-color: #01321b;
-  font-family: "Candara", sans-serif;
+  background-color: #fff9f3;
+  font-family: "Palatino", serif;
   margin: 0;
 }
 
 header {
-  color: #fff0d7;
+  background-color: #666;
+  color: #fff9f3;
   margin: 0px;
   padding: 5px;
   text-align: center;
+  text-shadow: -1px -1px #000;
   width: 100%;
 }
 
@@ -16,44 +18,77 @@ section {
   padding: 10px;
 }
 
+section .reference {
+  text-align: right;
+  font-size: .8em;
+  font-style: italic;
+  margin: 0px;
+}
+
 #goals {
-  background-color: #afd3ff;
+  background-color: #ecac70;
+  border: 1px solid #295e9e;
   border-radius: 10px;
+  box-shadow: -5px -5px 5px #252338;
+  color: #252338;
+  font-family: "Arial", sans-serif;
   margin: 15px 10px 10px 15px;
 }
 
 #goals h1 {
+  color: #d16321;
+  font-family: "Arial Black", sans-serif;
+  font-variant: small-caps;
   margin: 0px;
 }
 
 #goals a {
   text-decoration: none;
 }
-/*#goals a:link {color: #295e9e;}
+#goals a:link {color: #295e9e;}
 #goals a:active {color: #669900;}
-#goals a:visited {color: #669900;}*/
+#goals a:visited {color: #669900;}
 
 #about_me {
-  /*background-color: #e6ffff;*/
+  background-color: #e6ffff;
   color: #331a00;
   font-family: "Geneva", sans-serif;
-  /*border-bottom: 6px double #ffaa90;
-  border-top: 6px double #ffaa90;*/
+  border-bottom: 6px double #ffaa90;
+  border-top: 6px double #ffaa90;
   padding: 10px 20px;
 }
 
-/*#about_me a:link {color: #616799;}
+#about_me a:link {color: #616799;}
 #about_me a:visited {color: #616799;}
-#about_me a:hover {color: #91daff;}*/
+#about_me a:hover {color: #91daff;}
 
 #education {
+  background-color: #2a3d01;
   font-family: "Goudy Old Style", serif;
+  margin: 15px 45px;
   padding: 10px;
 }
 
-#education p {
-  padding-left: 20px;
+#education div {
+  background-color: #6f8245;
+  border: 2px solid #331a00;
+  border-radius: 2px;
+  box-shadow: inset 0 0 3px #e9e2d3;
+  color: #f9efd5;
+  text-shadow: -1px -1px #2a3d01;
 }
+
+#education h1 {
+  margin: 10px 10px 0px 10px;
+}
+
+#education p {
+  margin-bottom: 5px;
+  margin-right: 10px;
+}
+
+#education a:link {color: #FFE8AC;}
+#education a:visited {color: #FFE8AC;}
 
 #experience {
   font-family: "Courier New", serif;
