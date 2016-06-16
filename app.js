@@ -69,13 +69,13 @@ if (answer5 === 'yes' || answer5 === 'y') {
 
 // Asks the user to guess a number between 1 and 100
 var myNumber = 46; // Set the number to guess.
-var tries = 1; // Variable to keep track of the number of tries.
+var tries = 0; // Variable to keep track of the number of tries.
 
-while (tries < 5) {
-  var answer6 = parseInt(prompt('Guess a number between 1 and 100.\n(You have ' + (5 - tries) + ' tries remaining.)')); // How many tries they have left.
+while (tries < 4) {
+  var answer6 = parseInt(prompt('Guess a number between 1 and 100.\n(You have ' + (4 - tries) + ' tries remaining.)')); // How many tries they have left.
   if (answer6 === myNumber) {
     alert('You guessed it! The number was ' + myNumber + '!');
-    tries = 5;
+    tries = 4;
     correctAnswers += 1;
   } else if (answer6 < myNumber) {
     alert('Too low!');
@@ -92,19 +92,18 @@ var answersArray = ['sushi',
                     'lemon bars',
                     'mac and cheese',
                     'pomegranates',
-                    'cheese',
-                    'bacon'
+                    'cheese'
                   ];
-var tries = 1;
+var tries = 0;
 var guessedRight = false;
 
-while (tries < 7 && guessedRight === false) {
-  var answer7 = prompt('Guess one of Erica\'s favorite foods! (You have ' + (7 - tries) + ' guesses left.)').toLowerCase();
+while (tries < 6 && guessedRight === false) {
+  var answer7 = prompt('Guess one of Erica\'s favorite foods! (You have ' + (6 - tries) + ' guesses left.)').toLowerCase();
   for (var i = 0; i < answersArray.length; i++) {
     if (answer7 === answersArray[i]) {
       guessedRight = true;
       correctAnswers += 1;
-      alert('You guessed one!\n\nErica\'s favorite foods are:\nsushi\nice cream\nlemon bars\nmac and cheese\npomegranates\ncheese\nbacon');
+      alert('You guessed one!\n\nErica\'s favorite foods are:\nsushi\nice cream\nlemon bars\nmac and cheese\npomegranates\ncheese');
       break;
     }
   }
@@ -114,7 +113,7 @@ while (tries < 7 && guessedRight === false) {
   }
 }
 if (guessedRight === false) {
-  alert('Alas, you ran out of guesses!\n\nErica\'s favorite foods are:\nsushi\nice cream\nlemon bars\nmac and cheese\npomegranates\ncheese\nbacon');
+  alert('Alas, you ran out of guesses!\n\nErica\'s favorite foods are:\nsushi\nice cream\nlemon bars\nmac and cheese\npomegranates\ncheese');
 }
 
 // Tells the user how many questions they got right.
