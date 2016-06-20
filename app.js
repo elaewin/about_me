@@ -1,19 +1,19 @@
 'use strict';
 
-// Collects user's name
 function greeting() {
+  // Collects user's name
   var userName = prompt('Hello! What is your name?');
   alert('Welcome ' + userName + '! Glad you\'re here!');
 }
 
-// Sets a variable to count the number of right answers.
-var userTotalCorrect = 0;
+var userTotalCorrect = 0; // Keeps track of the number of right answers.
+var numberOfQuestions = 7; // Total number of questions in the 'game'
 
 // Array that holds questions 1-5
 var myQuestions = ['Does Erica have 2 cats?', 'Is Erica from Seattle?', 'Does Erica hate cheese?', 'Has Erica lived in London?', 'Did Erica go to the University of Washington?'];
 
 // Array that holds the answers to questions 1-5 in simple y/n format
-var comparisonAnswers = [['y', 'yes','n', 'no'], ['y', 'yes', 'n', 'no'], ['n', 'no', 'y', 'yes'], ['n', 'no', 'y', 'yes'], ['y', 'yes', 'n', 'no']];
+var comparisonAnswers = [ ['y', 'yes', 'n', 'no'], ['y', 'yes', 'n', 'no'], ['n', 'no', 'y', 'yes'], ['n', 'no', 'y', 'yes'], ['y', 'yes', 'n', 'no'] ];
 
 // Array that holds the responses to correct answers to questions 1-5
 var correctAnswers = ['You\'re right! Erica has two cats, named Aonghus and Murdoch.\n\nShe calls them her \'Scottish Buddy-Cop Show\'.', 'Correct! Erica was born in Seattle, (although she grew up in Olympia,) and moved back in the mid-90\'s.', 'That\'s right! Erica does NOT hate cheese.\nWhat kind of person hates cheese!?', 'Right! Erica has never lived in London, although she has lived in Boston, MA, Chapel Hill, NC, and Aberdeen, Scotland.', 'She did! Erica is a third-generation Husky grad.'];
@@ -53,7 +53,7 @@ function question6() {
     } else if(answer6 > myNumber) {
       alert('Too high!');
     } else {
-      alert('Try again--enter a number between 1 and 100 this time!\n(You have ' + (4 - q6tries) + ' tries remaining.)');
+      alert('Try again--enter a number between 1 and 100 this time!');
     }
     q6tries++;
   }
@@ -91,4 +91,4 @@ question6();
 question7();
 
 // Tells the user how many questions they got right.
-alert('You got ' + userTotalCorrect + ' answer(s) right out of 7!');
+alert('You got ' + userTotalCorrect + ' answer(s) right out of ' + numberOfQuestions + '!');

@@ -1,100 +1,135 @@
-body {
-  background-color: #fff9f3;
-  font-family: "Palatino", serif;
+/* Remove browser styles */
+* {
+  /*outline: 1px dotted pink; */
   margin: 0;
+  padding: 0;
 }
 
-header {
-  background-color: #666;
-  color: #fff9f3;
-  margin: 0px;
-  padding: 5px;
-  text-align: center;
-  text-shadow: -1px -1px #000;
-  width: 100%;
+/* Set font styles & background color */
+body {
+  background: #111 url("images/ansel_adams_leaves.jpg") no-repeat fixed center;
+  background-size: cover;
+  color: #ffe6cc;
+  font-family: Open Sans, sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: Ubuntu, sans-serif;
+}
+
+#page_wrapper {
+  max-width: 1000px;
+  margin: 0px auto;
 }
 
 section {
+  height: 480px;
+  width: 480px;
+  position: relative;
+  float: left;
+  margin: 5px;
+}
+
+.section_content {
+  border: 1px solid #b35900;
+  overflow: hidden;
   padding: 10px;
+  position: absolute;
 }
 
-section .reference {
-  text-align: right;
-  font-size: .8em;
-  font-style: italic;
-  margin: 0px;
+h1 {
+  font-size: 3em;
+  letter-spacing: 0.15em;
+  padding: 15px;
+  text-shadow: -1px -1px 0.5px #b35900;
 }
 
-#goals {
-  background-color: #ecac70;
-  border: 1px solid #295e9e;
-  border-radius: 10px;
-  box-shadow: -5px -5px 5px #252338;
-  color: #252338;
-  font-family: "Arial", sans-serif;
-  margin: 15px 10px 10px 15px;
+/* Styles for aligning the horizontal and vertical sections. */
+.bottom {
+  bottom: 0;
 }
 
-#goals h1 {
-  color: #d16321;
-  font-family: "Arial Black", sans-serif;
-  font-variant: small-caps;
-  margin: 0px;
+.left {
+  left: 0;
 }
 
-#goals a {
+.right {
+  right: 0;
+  clear: both;
+}
+
+.top {
+  top: 0;
+}
+
+.horizontal {
+  height: 60%;
+  width: 95%;
+}
+
+.vertical {
+  height: 95%;
+  width: 65%;
+}
+
+/* Colored backgrounds */
+/* Palette: http://paletton.com/palette.php?uid=72y0L0kup5-lVdPp%2B9kE62ERT0E */
+
+.green {
+  background-color: #1a3003;
+}
+
+.teal {
+  background-color: #023131;
+}
+
+.brown {
+  background-color: #311702;
+}
+
+.red {
+  background-color: #300313;
+}
+
+h2 {
+  letter-spacing: .05em;
+  padding-bottom: 5px;
+  text-shadow: -1px -1px 0.5px #000;
+}
+
+p {
+  padding: 5px 0px;
+}
+
+a {
   text-decoration: none;
 }
-#goals a:link {color: #295e9e;}
-#goals a:active {color: #669900;}
-#goals a:visited {color: #669900;}
 
-#about_me {
-  background-color: #e6ffff;
-  color: #331a00;
-  font-family: "Geneva", sans-serif;
-  border-bottom: 6px double #ffaa90;
-  border-top: 6px double #ffaa90;
-  padding: 10px 20px;
+a:link {
+  color: #e67300;
 }
 
-#about_me a:link {color: #616799;}
-#about_me a:visited {color: #616799;}
-#about_me a:hover {color: #91daff;}
-
-#education {
-  background-color: #2a3d01;
-  font-family: "Goudy Old Style", serif;
-  margin: 15px 45px;
-  padding: 10px;
+a:visited {
+  color: #b35900;
 }
 
-#education div {
-  background-color: #6f8245;
-  border: 2px solid #331a00;
-  border-radius: 2px;
-  box-shadow: inset 0 0 3px #e9e2d3;
-  color: #f9efd5;
-  text-shadow: -1px -1px #2a3d01;
+a:hover {
+  color: orange;
 }
 
-#education h1 {
-  margin: 10px 10px 0px 10px;
+a:active {
+  color: orange;
 }
 
-#education p {
-  margin-bottom: 5px;
-  margin-right: 10px;
+ol, ul {
+  padding: 5px 5px 5px 25px;
 }
 
-#education a:link {color: #FFE8AC;}
-#education a:visited {color: #FFE8AC;}
-
-#experience {
-  font-family: "Courier New", serif;
-  padding: 10px;
+.no_bullets {
+  list-style-type: none;
+  padding: 10px 0px;
 }
 
-#experience h1 {
-  font-family: "Impact", sans-serif;
+.whitespace_top {
+  padding: 5px 0px 0px 0px;
 }
